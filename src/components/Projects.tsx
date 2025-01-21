@@ -24,7 +24,7 @@ const projects: FeatureProps[] = [
         "The Whistleblower tool by bitExpert allows for the secure and anonymous reporting of misconduct, fraud, ethical violations, and other issues. This tool helps companies mitigate risks, increase employee satisfaction, and ensure compliance with legal regulations.",
     image: whistleblower,
     link: "https://www.bitexpert.de/de/produkte/whistleblower",
-    linkName: "Whistleblower",
+    linkName: "go to",
   },
   {
     title: "Website for SSV-Wachenheim",
@@ -32,7 +32,7 @@ const projects: FeatureProps[] = [
         "I have set up a website for the Wachenheim Shooting Club. This site was only available in very old HTML and CSS code. First I started to rewrite the website in React. Then I decided to do it with GRAV so that the owner can easily edit the content of the site in a simple CMS.",
     image: wachenheim,
     link: "http://www.ssv-wachenheim.de/",
-    linkName: "SSV-Wachenheim",
+    linkName: "Go to",
   },
   {
     title: "Website Kinderkunstschule Bad Homburg",
@@ -40,7 +40,7 @@ const projects: FeatureProps[] = [
         "This page was created with Wix.com. The design is self-made. The children's art school is run by Ulrike Göhring. She also offers art therapy. The German slogan is : Kleine Künstler, große Ideen!",
     image: kinderkunstschule,
     link: "https://kinderkunstschule-hg.de/",
-    linkName: "Kinderkunstschule Bad Homburg",
+    linkName: "go to",
   },
 ];
 

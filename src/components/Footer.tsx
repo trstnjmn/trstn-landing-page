@@ -4,7 +4,7 @@ export const Footer = () => {
     <footer id="footer">
       <hr className="w-11/12 mx-auto" />
 
-      <section className="container py-4 grid grid-cols-2 md:grid-cols-5 gap-x-12 gap-y-8">
+      <section className="container py-4 grid grid-cols-1 md:grid-cols-5 gap-x-12 gap-y-8">
         <div className="col-span-full xl:col-span-2">
         </div>
 

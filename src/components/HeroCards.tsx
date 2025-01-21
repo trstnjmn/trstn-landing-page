@@ -6,14 +6,16 @@ import {
   CardLink,
 } from "@/components/ui/card";
 
+import image from "../img/Pixel profile extra large.png";
+
 export const HeroCards = () => {
   return (
           <Card className="flex flex-col justify-center items-center">
               <CardHeader >
                   <CardTitle className="text-center mb-2">Torsten Jamin</CardTitle>
                   <img
-                      src="src/img/Pixel profile extra large.png"
-                      alt="About feature"
+                      src={image}
+                      alt="Profile picture"
                       className="object-cover object-center mx-auto mb-2"
                   />
 

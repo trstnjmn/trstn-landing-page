@@ -8,8 +8,8 @@ const GameboyColor = () => {
                 <div className="power">
                     <div className="indicator">
                         <div className="led"></div>
-                        <span className="arc" ></span>
-                        <span className="arc" ></span>
+                        <span className="arc"></span>
+                        <span className="arc"></span>
                         <span className="arc"></span>
                     </div>
                     POWER

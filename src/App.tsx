@@ -8,12 +8,14 @@ import { Skills } from "./components/Skills";
 import {Certifications} from "./components/Certifications";
 import './scss/snes.scss';
 import "./App.css";
+import {Test} from "./components/utilities/Test";
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
+        <Test />
       <About />
       <Skills />
       <Projects />

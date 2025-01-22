@@ -9,7 +9,6 @@ import whistleblower from "../img/Whistleblower.jpg";
 import wachenheim from "../img/Wachenheim.jpeg";
 import kinderkunstschule from "../img/Kinderkunstschule.jpeg";
 import {getRandomSnesButtonColor} from "./utilities/snesRandomColors";
-import GameboyColor from "@/components/GameboyColor.tsx";
 
 interface FeatureProps {
   title: string;
@@ -86,10 +85,10 @@ export const Projects = () => {
                 </CardLink>
               </Card>
           ))}
-          <div className="m-auto">
-            <GameboyColor />
+          <div className="snes-container bg-white m-auto">
+            <iframe src="https://ognis1205.github.io/nests/" width="540" height="685"></iframe>
           </div>
         </div>
       </section>
-  );
+);
 };

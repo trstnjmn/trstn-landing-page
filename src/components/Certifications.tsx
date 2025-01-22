@@ -21,14 +21,14 @@ const certifications: FeatureProps[] = [
     title: "Responsive Web Design",
     image: image1,
     link: "https://www.freecodecamp.org/",
-    linkName: "go to",
+    linkName: "from freecodecamp.org",
   },
 
   {
     title: "Frontend Certification",
     image: image2,
     link: "https://www.freecodecamp.org/",
-    linkName: "go to",
+    linkName: "from freecodecamp.org",
   },
 
   {

@@ -35,7 +35,7 @@ const certifications: FeatureProps[] = [
     title: "Plant-an-app",
     image: image3,
     link: "https://academy.plantanapp.com/",
-    linkName: "go to",
+    linkName: "from Low-Code-Academy",
   },
 
 ];

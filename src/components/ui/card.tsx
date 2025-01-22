@@ -6,6 +6,10 @@ const Card = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElemen
         <div
             ref={ref}
             className={cn("snes-container", className)}
+            style={{
+                backgroundColor: 'hsl(var(--card))',
+                color: 'hsl(var(--card-foreground))',
+            }}
             {...props}
         />
     )
@@ -27,7 +31,7 @@ const CardTitle = React.forwardRef<HTMLHeadingElement, React.HTMLAttributes<HTML
     ({ className, ...props }, ref) => (
         <h3
             ref={ref}
-            className={cn("text-lg text-ocean-color", className)}
+            className={cn("text-2xl text-ocean-color", className)}
             {...props}
         />
     )
@@ -38,7 +42,8 @@ const CardDescription = React.forwardRef<HTMLParagraphElement, React.HTMLAttribu
     ({ className, ...props }, ref) => (
         <p
             ref={ref}
-            className={cn("text-phantom-color", className)}
+            className={cn("", className)}
+
             {...props}
         />
     )
@@ -47,7 +52,7 @@ CardDescription.displayName = "CardDescription";
 
 const CardContent = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
     ({ className, ...props }, ref) => (
-        <div ref={ref} className={cn("flex-grow text-galaxy-color", className)} {...props} />
+        <div ref={ref} className={cn("flex-grow text-muted-foreground", className)} {...props} />
 )
 );
 CardContent.displayName = "CardContent";
@@ -56,7 +61,7 @@ const CardFooter = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDiv
     ({ className, ...props }, ref) => (
         <div
             ref={ref}
-            className={cn("flex items-center text-galaxy-color", className)}
+            className={cn("flex items-center text-nature-color", className)}
             {...props}
         />
     )

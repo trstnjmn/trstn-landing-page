@@ -1,9 +1,8 @@
 import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-  CardLink,
+    Card,
+    CardHeader,
+    CardTitle,
+    CardLink, CardFooter,
 } from "@/components/ui/card";
 
 import image from "../img/Pixel profile extra large.png";
@@ -19,9 +18,9 @@ export const HeroCards = () => {
                       className="object-cover object-center mx-auto mb-2"
                   />
 
-                  <CardDescription className="text-center">
+                  <CardFooter className="text-center">
                       Frontend Developer
-                  </CardDescription>
+                  </CardFooter>
               </CardHeader>
 
               <CardLink className="text-center">
@@ -29,7 +28,7 @@ export const HeroCards = () => {
                       rel="noreferrer noopener"
                       href="https://github.com/trstnjmn"
                       target="_blank"
-                      className="snes-link text-ocean-color"
+                      className="snes-button has-ember-color"
                   >
                       GitHub
                   </a>

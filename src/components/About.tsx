@@ -1,3 +1,4 @@
+import {Card, CardContent} from "@/components/ui/card.tsx";
 
 export const About = () => {
   return (
@@ -8,25 +9,30 @@ export const About = () => {
           <h2 className="snes-container-title has-ocean-underline mb-8">
               About me
           </h2>
-          <div className="snes-container py-4">
-              <p className="text-xl text-muted-foreground mt-4">
-                  I'm a Frontend Developer at bitExpert in Mannheim, passionate about building user-friendly and
-                  engaging web experiences.
-              </p>
-              <p className="text-xl text-muted-foreground mt-4">
-                  My journey into the world of coding began in 2023, a year of exciting new beginnings at 36. I
-                  initially explored the landscape of low-code platforms, eager to learn and experiment.
-              </p>
-              <p className="text-xl text-muted-foreground mt-4">
-                  Mid-2024 marked a significant turning point as I embarked on a dedicated JavaScript course. This
-                  immersive experience ignited my passion for frontend development and ultimately led to my current role
-                  at bitExpert.
-              </p>
-              <p className="text-xl text-muted-foreground mt-4">
-                  I'm eager to continue learning and growing as a developer, contributing to innovative and impactful
-                  projects.
-              </p>
-          </div>
+          <Card>
+              <CardContent>
+                  <p className="text-xl text-muted-foreground mt-4">
+                      I'm a Frontend Developer at bitExpert in Mannheim, passionate about building user-friendly and
+                      engaging web experiences.
+                  </p>
+                  <p className="text-xl text-muted-foreground mt-4">
+                      My journey into the world of coding began in 2023, a year of exciting new beginnings at 36. I
+                      initially explored the landscape of low-code platforms, eager to learn and experiment.
+                  </p>
+                  <p className="text-xl text-muted-foreground mt-4">
+                      Mid-2024 marked a significant turning point as I embarked on a dedicated JavaScript course. This
+                      immersive experience ignited my passion for frontend development and ultimately led to my current
+                      role
+                      at bitExpert.
+                  </p>
+                  <p className="text-xl text-muted-foreground mt-4">
+                      I'm eager to continue learning and growing as a developer, contributing to innovative and
+                      impactful
+                      projects.
+                  </p>
+              </CardContent>
+          </Card>
+
       </section>
   );
 };

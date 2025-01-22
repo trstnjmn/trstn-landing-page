@@ -36,20 +36,27 @@ const routeList: RouteProps[] = [
   },
 ];
 
+const goToTop = () => {
+  window.scroll({
+    top: 0,
+    left: 0,
+  });}
+
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
+    <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-card bg-card" >
       <NavigationMenu className="mx-auto">
-        <NavigationMenuList className="container h-20 px-4 w-screen flex justify-between ">
+        <NavigationMenuList className="md:py-4 py-6 px-8 w-screen flex justify-between ">
           <NavigationMenuItem className="font-bold flex">
-            <a
-              rel="noreferrer noopener"
-              href="/"
-              className="ml-2 font-bold text-xl flex"
-            >
-              TrstnJmn
-            </a>
+            <h1 className="ml-2 font-bold md:text-4xl text-2xl text-ocean-color">
+              <a
+                  rel="noreferrer noopener"
+                  onClick={goToTop}
+              >
+                TrstnJmn
+              </a>
+            </h1>
           </NavigationMenuItem>
 
           {/* mobile */}
@@ -57,12 +64,12 @@ export const Navbar = () => {
             <ModeToggle />
 
             <Sheet
-              open={isOpen}
+                open={isOpen}
               onOpenChange={setIsOpen}
             >
-              <SheetTrigger className="px-2">
+              <SheetTrigger className="ml-4 p-0 snes-button">
                 <Menu
-                  className="flex md:hidden h-15 w-15"
+                  className="flex md:hidden h-6 w-6"
                   onClick={() => setIsOpen(true)}
                 >
                   <span className="sr-only">Menu Icon</span>

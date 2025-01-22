@@ -47,9 +47,9 @@ export const Navbar = () => {
   return (
     <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-card bg-card" >
       <NavigationMenu className="mx-auto">
-        <NavigationMenuList className="md:py-4 py-6 px-8 w-[95vw] flex justify-between ">
+        <NavigationMenuList className="md:py-4 py-6 md:px-8 w-[95vw] flex justify-between ">
           <NavigationMenuItem className="font-bold flex">
-            <h1 className="ml-2 font-bold md:text-4xl text-2xl text-ocean-color">
+            <h1 className="md:ml-2 font-bold md:text-4xl text-base text-ocean-color">
               <a
                   rel="noreferrer noopener"
                   onClick={goToTop}

@@ -15,9 +15,10 @@ export function ModeToggle() {
       <DropdownMenuTrigger asChild>
         <Button
             variant="snesOcean"
+            className="mr-2 py-4 md:py-0"
         >
-          <button className="text-base p-0 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0">Light</button>
-          <button className="text-base p-0 absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100">Dark</button>
+          <button className="text-base p-1 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0">Light</button>
+          <button className="text-base p-1 absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100">Dark</button>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="bg-white mt-4">

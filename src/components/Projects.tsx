@@ -85,8 +85,8 @@ export const Projects = () => {
                 </CardLink>
               </Card>
           ))}
-          <div className="snes-container bg-white m-auto hidden md:block">
-            <iframe src="https://ognis1205.github.io/nests/" width="540" height="685"></iframe>
+          <div className="snes-container bg-white m-auto">
+            <iframe src="https://ognis1205.github.io/nests/" width="360" height="485"></iframe>
           </div>
         </div>
       </section>

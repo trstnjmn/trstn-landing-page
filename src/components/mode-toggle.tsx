@@ -16,8 +16,8 @@ export function ModeToggle() {
         <Button
             variant="snesOcean"
         >
-          <button className="mt-4 md:mt-0 p-1 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0">Light</button>
-          <button className="mt-4 md:mt-0 p-1 absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100">Dark</button>
+          <button className="text-base p-0 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0">Light</button>
+          <button className="text-base p-0 absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100">Dark</button>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="bg-white mt-4">

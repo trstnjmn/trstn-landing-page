@@ -5,7 +5,7 @@ const Card = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElemen
     ({ className, ...props }, ref) => (
         <div
             ref={ref}
-            className={cn("snes-container", className)}
+            className={cn("snes-container max-w-[30rem] md:max-w-full mx-auto", className)}
             style={{
                 backgroundColor: 'hsl(var(--card))',
                 color: 'hsl(var(--card-foreground))',

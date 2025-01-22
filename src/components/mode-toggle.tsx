@@ -14,11 +14,10 @@ export function ModeToggle() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
-            variant="default"
-
+            variant="snesOcean"
         >
-          <button className="snes-button has-sunshine-color mt-4 md:mt-0 p-1 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0">Light</button>
-          <button className="snes-button has-galaxy-color mt-4 md:mt-0 p-1 absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100">Dark</button>
+          <button className="mt-4 md:mt-0 p-1 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0">Light</button>
+          <button className="mt-4 md:mt-0 p-1 absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100">Dark</button>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="bg-white mt-4">
@@ -28,7 +27,7 @@ export function ModeToggle() {
         <DropdownMenuItem onClick={() => setTheme("dark")} className="snes-button has-galaxy-color p-0">
           Dark
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")} className="snes-button has-phantom-color p-0 m-4">
+        <DropdownMenuItem onClick={() => setTheme("system")} className="snes-button has-phantom-color p-0">
           System
         </DropdownMenuItem>
       </DropdownMenuContent>

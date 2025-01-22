@@ -6,6 +6,7 @@ import { Navbar } from "./components/Navbar";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { Skills } from "./components/Skills";
 import {Certifications} from "./components/Certifications";
+import './scss/snes.scss';
 import "./App.css";
 
 function App() {

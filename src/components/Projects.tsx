@@ -58,7 +58,7 @@ export const Projects = () => {
           A few projects I have done.
         </h3>
         <div className="grid md:grid-cols-2 gap-8">
-          {projects.map(({ title, description, image, link, linkName }) => (
+          {projects.map(({title, description, image, link, linkName}) => (
               <Card key={title}>
                 <CardHeader>
                   <CardTitle>{title}</CardTitle>
@@ -70,7 +70,7 @@ export const Projects = () => {
                   <img
                       src={image}
                       alt={title}
-                      className="object-cover object-center w-full mx-auto snes-image"
+                      className="object-cover object-center w-full max-h-[290px] mx-auto snes-image"
                   />
                 </CardFooter>
                 <CardLink>

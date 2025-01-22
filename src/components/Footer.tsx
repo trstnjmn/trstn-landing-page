@@ -91,15 +91,15 @@ export const Footer = () => {
         </div>
         <div className="flex flex-col col-span-2 md:col-span-1  gap-2">
           <h5 className="text-sm">
-            Landing page made by{" "} </h5>
+            Made with{" "} </h5>
           <h5 className="text-xs">
             <a
                 rel="noreferrer noopener"
                 target="_blank"
-                href="https://github.com/trstnjmn"
-                className="snes-link text-nature-color"
+                href="https://snes-css.sadlative.com"
+                className="snes-link text-ocean-color"
             >
-              Torsten Jamin
+              SNES.CSSn
             </a>
           </h5>
         </div>

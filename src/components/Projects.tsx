@@ -9,6 +9,7 @@ import whistleblower from "../img/Whistleblower.jpg";
 import wachenheim from "../img/Wachenheim.jpeg";
 import kinderkunstschule from "../img/Kinderkunstschule.jpeg";
 import {getRandomSnesButtonColor} from "./utilities/snesRandomColors";
+import GameboyColor from "@/components/GameboyColor.tsx";
 
 interface FeatureProps {
   title: string;
@@ -85,6 +86,9 @@ export const Projects = () => {
                 </CardLink>
               </Card>
           ))}
+          <div className="m-auto">
+            <GameboyColor />
+          </div>
         </div>
       </section>
   );

@@ -30,3 +30,13 @@ const snesLinkColors = [
 export const getRandomSnesLinkColor = () => {
     return snesLinkColors[Math.floor(Math.random() * snesLinkColors.length)];
 };
+
+const snesBlockquotesColors = [
+    'snes-blockquote has-plumber-bg',
+    'snes-blockquote has-phantom-bg',
+    'snes-blockquote has-ember-bg',
+    'snes-blockquote '];
+
+export const getRandomBlockquotesColor = () => {
+    return snesBlockquotesColors[Math.floor(Math.random() * snesBlockquotesColors.length)];
+};

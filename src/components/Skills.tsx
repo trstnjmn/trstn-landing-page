@@ -1,4 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import {getRandomBlockquotesColor} from "@/components/utilities/snesRandomColors.tsx";
 
 interface Skills {
   image: string;
@@ -52,8 +53,6 @@ const skills: Skills[] = [
   },
 ];
 
-const classNames = ['has-plumber-bg', 'has-phantom-bg', 'has-ember-bg', ''];
-
 export const Skills = () => {
   return (
       <section
@@ -68,12 +67,10 @@ export const Skills = () => {
         </h3>
 
         <div className="flex flex-wrap gap-8">
-          {skills.map(({ image, name }, index) => (
+          {skills.map(({ image, name }) => (
               <div key={name}>
                 <blockquote
-                    className={`p-1 flex flex-row my-auto snes-blockquote ${
-                        classNames[index % classNames.length]
-                    }`}
+                    className={`p-1 flex flex-row my-auto ${getRandomBlockquotesColor()}`}
                 >
                   <Avatar>
                     <AvatarImage alt={name} src={image} />

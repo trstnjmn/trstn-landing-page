@@ -1,125 +1,71 @@
-import { useState } from "react";
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuList,
-} from "@/components/ui/navigation-menu";
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-
-import { Menu } from "lucide-react";
-import { ModeToggle } from "./mode-toggle";
-import {getRandomSnesButtonColor} from "./utilities/snesRandomColors";
-
-
-interface RouteProps {
-  href: string;
-  label: string;
-}
-
-const routeList: RouteProps[] = [
-  {
-    href: "#skills",
-    label: "Skills",
-  },
-  {
-    href: "#projects",
-    label: "Projects",
-  },
-  {
-    href: "#certifications",
-    label: "Certifications",
-  },
-];
+import { useTheme } from "@/components/theme-provider.tsx";
 
 const goToTop = () => {
   window.scroll({
     top: 0,
     left: 0,
-  });}
+  });
+};
+
+const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+  const targetId = event.target.value; // Holt den Wert (ID) aus der Auswahl
+  const element = document.getElementById(targetId);
+  if (element) {
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+};
 
 export const Navbar = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  // useTheme Hook wird jetzt innerhalb der Komponente aufgerufen
+  const { theme, setTheme } = useTheme();
+
+  const handleThemeChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setTheme(event.target.value as "light" | "dark");
+  };
+
+  // Bestimme den initialen Wert für das Dropdown
+  const themeValue = theme === "system"
+      ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+      : theme;
+
   return (
-    <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-card bg-card" >
-      <NavigationMenu className="mx-auto">
-        <NavigationMenuList className="md:py-4 py-6 md:px-8 w-[95vw] flex justify-between ">
-          <NavigationMenuItem className="font-bold flex">
-            <h1 className="md:ml-2 font-bold md:text-4xl text-base text-ocean-color">
-              <a
-                  rel="noreferrer noopener"
-                  onClick={goToTop}
-              >
+      <header className="sticky top-0 z-40 w-full bg-card">
+        <div className="md:py-4 py-6 md:px-8 w-[95vw] flex justify-between flex flex-col md:flex-row gap-4">
+          <div>
+            <h1 className="ml-8 font-bold md:text-4xl text-base text-snes-ocean dark:text-snes-grey">
+              <a rel="noreferrer noopener" onClick={goToTop}>
                 TrstnJmn
               </a>
             </h1>
-          </NavigationMenuItem>
-
-          {/* mobile */}
-          <span className="flex md:hidden">
-            <ModeToggle />
-
-            <Sheet
-                open={isOpen}
-              onOpenChange={setIsOpen}
-            >
-              <SheetTrigger className="ml-4 p-0 snes-button">
-                <Menu
-                  className="flex md:hidden h-6 w-6"
-                  onClick={() => setIsOpen(true)}
-                >
-                  <span className="sr-only">Menu Icon</span>
-                </Menu>
-              </SheetTrigger>
-
-              <SheetContent side={"left"}>
-                <SheetHeader>
-                  <SheetTitle className="font-bold text-2xl my-8">
-                    TrstnJmn
-                  </SheetTitle>
-                </SheetHeader>
-                <nav className="flex flex-col justify-center items-center gap-8 mt-4">
-                  {routeList.map(({ href, label }) => (
-                    <a
-                      rel="noreferrer noopener"
-                      key={label}
-                      href={href}
-                      onClick={() => setIsOpen(false)}
-                      className={`p-1 ${getRandomSnesButtonColor()}`}
-                    >
-                      {label}
-                    </a>
-                  ))}
-                </nav>
-              </SheetContent>
-            </Sheet>
-          </span>
-
-          {/* desktop */}
-          <nav className="hidden md:flex gap-6">
-            {routeList.map((route: RouteProps, i) => (
-              <a
-                rel="noreferrer noopener"
-                href={route.href}
-                key={i}
-                className="snes-link has-galaxy-color p-0"
-              >
-                {route.label}
-              </a>
-            ))}
-          </nav>
-
-          <div className="hidden md:flex">
-
-            <ModeToggle />
           </div>
-        </NavigationMenuList>
-      </NavigationMenu>
-    </header>
+
+          <div className="flex flex-row gap-8 ml-8">
+            <div className="snes-form-group w-[360px]">
+              <div className="snes-input is-success dark:bg-snes-grey">
+                <select onChange={handleChange}>
+                  <option value="hero">Start</option>
+                  <option value="skills">Skills</option>
+                  <option value="projects">Projects</option>
+                  <option value="gameboy">Gameboy</option>
+                  <option value="certifications">Certifications</option>
+                </select>
+              </div>
+            </div>
+
+            <div className="snes-form-group w-[180px]">
+              <div className="snes-input is-warning dark:bg-snes-grey">
+                <select onChange={handleThemeChange} value={themeValue}>
+                  <option value="light">Light</option>
+                  <option value="dark">Night</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr className="bg-black h-1"/>
+      </header>
   );
 };

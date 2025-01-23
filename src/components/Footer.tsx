@@ -2,10 +2,10 @@
 export const Footer = () => {
   return (
       <footer id="footer">
-        <hr className="w-11/12 mx-auto"/>
-        <section className="dark:bg-card bg-card text-xs py-2 px-8 md:px-16 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <hr className="bg-black h-1"/>
+        <section className="text-xs md:text-sm py-2 px-8 md:px-16 grid grid-cols-2 md:grid-cols-4 gap-8 bg-card">
           <div className="flex flex-col gap-2">
-            <h5 className="text-sm">Follow me</h5>
+            <h5 className="text-sm md:text-base">Follow me</h5>
             <div>
               <a
                   rel="noreferrer noopener"
@@ -40,7 +40,7 @@ export const Footer = () => {
           </div>
 
           <div className="flex flex-col gap-2">
-            <h5 className="text-sm">3D print</h5>
+            <h5 className="text-sm md:text-base">3D print</h5>
             <div>
               <a
                   rel="noreferrer noopener"
@@ -65,7 +65,7 @@ export const Footer = () => {
           </div>
 
           <div className="flex flex-col gap-2">
-            <h5 className="text-sm">My wife's store</h5>
+            <h5 className="text-sm md:text-base">My wife's store</h5>
             <div>
               <a
                   rel="noreferrer noopener"
@@ -89,7 +89,7 @@ export const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col col-span-2 md:col-span-1  gap-2">
-            <h5 className="text-sm">
+            <h5 className="text-sm md:text-base">
               Made with{" "} </h5>
             <h5 className="text-xs">
               <a

@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* *=========== Default theme =========== */
+
 @layer base {
   :root {
     --background: 0, 0%, 90%;
@@ -32,12 +32,35 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
+    --snes-nature: #4BB244;
+    --snes-nature-shade: #347C2F;
+    --snes-plumber: #f22561;
+    --snes-plumber-shade: #a91a44;
+    --snes-sunshine: #f2c019;
+    --snes-sunshine-shade: #a98611;
+    --snes-ocean: #4eb6d9;
+    --snes-ocean-shade: #367f98;
+    --snes-turquoise: #40e0d0;
+    --snes-turquoise-shade: #33b3a6;
+    --snes-phantom: #9b5de5;
+    --snes-phantom-shade: #7c4ab7;
+    --snes-rose: #f784b2;
+    --snes-rose-shade: #C66A8E;
+    --snes-galaxy: #5a7d9a;
+    --snes-galaxy-shade: #48647B;
+    --snes-ember: #ff6f00;
+    --snes-ember-shade: #CC5900;
+    --snes-grey: #e5e5e5;
+    --snes-grey-shade: #b2b2b2;
+    --snes-dark: #4E4B4B;
+    --snes-dark-shade: #363434;
+
+    --snes-theme-dropdown: #f2c019;
   }
 
   .dark {
     --background: 0, 4%, 5%;
     --foreground: 0, 0%, 90%;
-
 
     --card: 0, 2%, 30%;
     --card-foreground: 210 40% 98%;
@@ -64,6 +87,30 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
 
+    --snes-nature: #347C2F;
+    --snes-nature-shade: #4BB244;
+    --snes-plumber: #a91a44;
+    --snes-plumber-shade: #f22561;
+    --snes-sunshine: #a98611;
+    --snes-sunshine-shade: #f2c019;
+    --snes-ocean: #367f98;
+    --snes-ocean-shade: #4eb6d9;
+    --snes-turquoise: #33b3a6;
+    --snes-turquoise-shade: #40e0d0;
+    --snes-phantom: #7c4ab7;
+    --snes-phantom-shade: #9b5de5;
+    --snes-rose: #C66A8E;
+    --snes-rose-shade: #f784b2;
+    --snes-galaxy: #48647B;
+    --snes-galaxy-shade: #5a7d9a;
+    --snes-ember: #CC5900;
+    --snes-ember-shade: #ff6f00;
+    --snes-grey: #b2b2b2;
+    --snes-grey-shade: #e5e5e5;
+    --snes-dark: #4E4B4B;
+    --snes-dark-shade: #363434;
+
+    --snes-theme-dropdown: #5a7d9a;
   }
 }
 

@@ -12,14 +12,14 @@ import "./App.css";
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Certifications />
-      <Footer />
-      <ScrollToTop />
+        <Navbar />
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Certifications />
+        <Footer />
+        <ScrollToTop />
     </>
   );
 }

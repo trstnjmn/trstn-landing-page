@@ -16,6 +16,7 @@ import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
 import {getRandomSnesButtonColor} from "./utilities/snesRandomColors";
 
+
 interface RouteProps {
   href: string;
   label: string;

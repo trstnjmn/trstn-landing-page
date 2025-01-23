@@ -1,4 +1,5 @@
 import {getRandomSnesLinkColor} from "@/components/utilities/snesRandomColors.tsx";
+import {Card} from "@/components/ui/card.tsx";
 
 export const Gameboy = () => {
     return (
@@ -10,7 +11,7 @@ export const Gameboy = () => {
                 NES / Gameboy
             </h2>
             <div className="snes-container grid md:grid-cols-2 gap-8">
-                <div className="snes-container bg-white m-auto h-full">
+                <Card className="snes-container bg-white m-auto h-full">
                     <h3 className="text-xl">NesTs Nintendo Entertainment System (NES) Emulator</h3>
                     <p>You can play online NES games.</p>
                     <p>
@@ -34,7 +35,7 @@ export const Gameboy = () => {
                         automatically. For legal reasons, I am not allowed to provide a Rom here.
                         Unfortunately, the touchscreen control does not work yet.
                     </p>
-                </div>
+                </Card>
 
                 <div className="snes-container bg-white m-auto">
                         <iframe src="https://ognis1205.github.io/nests/" width="305" height="565"></iframe>

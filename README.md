@@ -9,19 +9,10 @@ Build your React landing page effortlessly with the required sections to your pr
 - [x] Navbar
 - [x] Sidebar(mobile)
 - [x] Hero
-- [x] Sponsors
-- [x] Certifications
-- [x] About
-- [x] Stats
-- [x] How It Works
-- [x] Projects
-- [x] Services
-- [x] Call-to-Action (CTA)
 - [x] Skills
-- [x] Team
-- [x] Pricing
-- [x] Newsletter
-- [x] Frequently Asked Questions(FAQ)
+- [x] About
+- [x] Projects
+- [x] Certifications
 - [x] Footer
 
 ## Features

@@ -15,7 +15,7 @@ export const HeroCards = () => {
                   <img
                       src={image}
                       alt="Profile picture"
-                      className="object-cover object-center mx-auto mb-2"
+                      className="object-cover object-center mx-auto mb-2 snes-image"
                   />
 
                   <CardFooter className="text-center">

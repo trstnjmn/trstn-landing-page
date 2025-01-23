@@ -10,10 +10,11 @@ export const Gameboy = () => {
             <h2 className="snes-container-title has-ocean-underline mb-8">
                 NES / Gameboy
             </h2>
-            <div className="snes-container grid md:grid-cols-2 gap-8">
-                <Card className="snes-container bg-white m-auto h-full">
-                    <h3 className="text-xl">NesTs Nintendo Entertainment System (NES) Emulator</h3>
-                    <p>You can play online NES games.</p>
+            <h3 className="mb-8">
+                NesTs Nintendo Entertainment System (NES) Emulator
+            </h3>
+            <div className="grid md:grid-cols-2 gap-8">
+                <Card className="snes-container bg-white m-auto h-full p-10">
                     <p>
                         This is a iframe from
                         <a href="https://ognis1205.github.io/nests/"
@@ -35,10 +36,28 @@ export const Gameboy = () => {
                         automatically. For legal reasons, I am not allowed to provide a Rom here.
                         Unfortunately, the touchscreen control does not work yet.
                     </p>
+                    <p>Controls</p>
+                <div className="flex flex-row mx-auto">
+                        <ul className="snes-list is-ocean-list-color mr-2">
+                            <li>Direction</li>
+                            <li>SELECT</li>
+                            <li>START</li>
+                            <li>A</li>
+                            <li>B</li>
+                        </ul>
+                        <ul className="snes-list is-nature-list-color">
+                            <li>Arrow buttons</li>
+                            <li>Space</li>
+                            <li>Return</li>
+                            <li>X</li>
+                            <li>Z</li>
+                        </ul>
+                    </div>
+
                 </Card>
 
                 <div className="snes-container bg-white m-auto">
-                        <iframe src="https://ognis1205.github.io/nests/" width="305" height="565"></iframe>
+                    <iframe src="https://ognis1205.github.io/nests/" width="324" height="565"></iframe>
 
                 </div>
             </div>

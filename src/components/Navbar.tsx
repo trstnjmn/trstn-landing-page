@@ -8,15 +8,15 @@ const goToTop = () => {
 };
 
 const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-  const targetId = event.target.value; // Holt den Wert (ID) aus der Auswahl
+  const targetId = event.target.value;
   const element = document.getElementById(targetId);
   if (element) {
-    element.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+    const yOffset = -120; // Offset in Pixeln (Anpassung nach Bedarf)
+    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
   }
 };
+
 
 export const Navbar = () => {
   // useTheme Hook wird jetzt innerhalb der Komponente aufgerufen
@@ -35,7 +35,7 @@ export const Navbar = () => {
       <header className="sticky top-0 z-40 w-full bg-card">
         <div className="md:py-4 py-6 md:px-8 w-[95vw] flex justify-between flex flex-col md:flex-row gap-4">
           <div>
-            <h1 className="ml-8 font-bold md:text-4xl text-base text-snes-ocean dark:text-snes-grey">
+            <h1 className="ml-8 my-auto font-bold md:text-4xl text-base text-snes-nature dark:text-snes-grey">
               <a rel="noreferrer noopener" onClick={goToTop}>
                 TrstnJmn
               </a>
@@ -43,14 +43,16 @@ export const Navbar = () => {
           </div>
 
           <div className="flex flex-row gap-8 ml-8">
-            <div className="snes-form-group w-[360px]">
+            <div className="snes-form-group w-[380px]">
               <div className="snes-input is-success dark:bg-snes-grey">
                 <select onChange={handleChange}>
+                  <option value="" disabled selected>Select Navigation</option>
                   <option value="hero">Start</option>
                   <option value="skills">Skills</option>
                   <option value="projects">Projects</option>
                   <option value="gameboy">Gameboy</option>
                   <option value="certifications">Certifications</option>
+                  <option value="footer">End</option>
                 </select>
               </div>
             </div>

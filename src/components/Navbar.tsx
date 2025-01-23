@@ -43,10 +43,10 @@ export const Navbar = () => {
           </div>
 
           <div className="flex flex-row gap-8 ml-8">
-            <div className="snes-form-group w-[380px]">
+            <div className="snes-form-group w-[360px]">
               <div className="snes-input is-success dark:bg-snes-grey">
                 <select onChange={handleChange}>
-                  <option value="" disabled selected>Select Navigation</option>
+                  <option value="" disabled selected>Select Navi</option>
                   <option value="hero">Start</option>
                   <option value="skills">Skills</option>
                   <option value="projects">Projects</option>

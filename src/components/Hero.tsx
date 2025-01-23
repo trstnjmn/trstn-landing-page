@@ -1,12 +1,10 @@
 import { HeroCards } from "./HeroCards";
-import {Cloud} from "../components/pixelArt/MarbioBros";
 
 export const Hero = () => {
     return (
         <section
             id="hero"
         >
-                <Cloud />
             <div className="container">
 
                 <div

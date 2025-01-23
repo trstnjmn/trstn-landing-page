@@ -42,8 +42,8 @@ export const Navbar = () => {
             </h1>
           </div>
 
-          <div className="flex flex-row gap-8 ml-8">
-            <div className="snes-form-group w-[360px]">
+          <div className="flex md:flex-row flex-col gap-8 ml-8">
+            <div className="snes-form-group w-[400px]">
               <div className="snes-input is-success dark:bg-snes-grey">
                 <select onChange={handleChange}>
                   <option value="" disabled selected>Select Navi</option>
@@ -57,7 +57,7 @@ export const Navbar = () => {
               </div>
             </div>
 
-            <div className="snes-form-group w-[180px]">
+            <div className="snes-form-group w-[220px]">
               <div className="snes-input is-warning dark:bg-snes-grey">
                 <select onChange={handleThemeChange} value={themeValue}>
                   <option value="light">Light</option>

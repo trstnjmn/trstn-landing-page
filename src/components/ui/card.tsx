@@ -72,7 +72,7 @@ const CardLink = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivEl
     ({ className, ...props }, ref) => (
         <div
             ref={ref}
-            className={cn("flex items-center justify-center", className)}
+            className={cn("flex items-center justify-center ", className)}
             {...props}
         />
     )

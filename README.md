@@ -30,12 +30,6 @@ Build your React landing page effortlessly with the required sections to your pr
 git clone git@github.com:trstnjmn/trstn-landing-page.git
 ```
 
-2. Go into project
-
-```bash
-cd shadcn-landing-page
-```
-
 3. Install dependencies
 
 ```bash

@@ -2,7 +2,7 @@ import {
   Card,
   CardContent,
   CardFooter,
-  CardHeader, CardLink,
+  CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import whistleblower from "../img/Whistleblower.jpg";
@@ -36,13 +36,21 @@ const projects: FeatureProps[] = [
     linkName: "Go to",
   },
   {
-    title: "Website Kinderkunstschule Bad Homburg",
+    title: "Kinderkunstschule",
     description:
         "This page was created with Wix.com. The design is self-made. The children's art school is run by Ulrike Göhring. She also offers art therapy. The German slogan is : Kleine Künstler, große Ideen!",
     image: kinderkunstschule,
     link: "https://kinderkunstschule-hg.de/",
     linkName: "go to",
   },
+  {
+    "title": "Welt des Erbens",
+    "description": "World of Inheritance is a site for mourners. Here I have built some templates, overview pages, an advisor search and much more.",
+    "image": "src/img/JenVerlag.jpg",
+    "link": "https://www.weltdeserbens.de/de",
+    "linkName": "go to"
+  }
+
 ];
 
 export const Projects = () => {
@@ -64,25 +72,24 @@ export const Projects = () => {
                   <CardTitle>{title}</CardTitle>
                 </CardHeader>
 
-                <CardContent>{description}</CardContent>
-
-                <CardFooter>
+                <CardContent>
+                  {description}
                   <img
                       src={image}
                       alt={title}
-                      className="object-cover object-center w-full max-h-[290px] mx-auto snes-image"
+                      className="object-cover object-center w-full max-h-[290px] mx-auto snes-image mt-6"
                   />
-                </CardFooter>
-                <CardLink>
+                </CardContent>
+                <CardFooter>
                   <a
                       rel="noreferrer noopener"
                       href={link}
-                      target="_blank"
-                      className={`p-1 truncate ${getRandomSnesButtonColor()}`}
-                  >
-                    {linkName}
-                  </a>
-                </CardLink>
+                        target="_blank"
+                        className={`p-1 truncate mx-auto ${getRandomSnesButtonColor()}`}
+                    >
+                      {linkName}
+                    </a>
+                </CardFooter>
               </Card>
           ))}
         </div>

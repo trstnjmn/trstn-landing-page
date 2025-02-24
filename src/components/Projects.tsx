@@ -8,6 +8,7 @@ import {
 import whistleblower from "../img/Whistleblower.jpg";
 import wachenheim from "../img/Wachenheim.jpeg";
 import kinderkunstschule from "../img/Kinderkunstschule.jpeg";
+import jenVerlag from "../img/JenVerlag.jpg"
 import {getRandomSnesButtonColor} from "./utilities/snesRandomColors";
 
 interface FeatureProps {
@@ -46,7 +47,7 @@ const projects: FeatureProps[] = [
   {
     "title": "Welt des Erbens",
     "description": "World of Inheritance is a site for mourners. Here I have built some templates, overview pages, an advisor search and much more.",
-    "image": "src/img/JenVerlag.jpg",
+    "image": jenVerlag,
     "link": "https://www.weltdeserbens.de/de",
     "linkName": "go to"
   }
